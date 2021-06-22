@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username/>
+                <wsse:Password
+                        Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"/>
+            </wsse:UsernameToken>
+        </wsse:Security>
+        <wsa1:lang xmlns:wsa1="http://xmlns.oracle.com/OIM/provisioning" soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next"
+                   soapenv:mustUnderstand="0">
+            <wsa1:language>en</wsa1:language>
+            <wsa1:sublanguage>US</wsa1:sublanguage>
+        </wsa1:lang>
+    </soapenv:Header>
+    <soapenv:Body>
+        <provisionUserRequest xmlns="http://caas.integration.anz/UserProvisioningService/xsd">
+            <addRequest xmlns:dsml="urn:oasis:names:tc:DSML:2:0:core" targetID="TransactiveGlobal"
+                        returnData="identifier" xmlns="urn:oasis:names:tc:SPML:2:0">
+                <containerID ID="User" targetID="TransactiveGlobal"/>
+                <data>
+                    <dsml:attr name="PreferredLanguage">
+                        <dsml:value>English</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="CountryCallingCode">
+                        <dsml:value>+91</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="Country">
+                        <dsml:value>IN</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="PreferredFirstName">
+                        <dsml:value>PNVUSRNP01234</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="Surname">
+                        <dsml:value>XYZ</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="LogonUserID">
+                        <dsml:value>PNVUSRNP01234</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="SuburbCity">
+                        <dsml:value>City</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="Status">
+                        <dsml:value>Active</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="OrganizationName">
+                        <dsml:value>Google India Pvt Ltd</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="MobilePhoneNumber">
+                        <dsml:value>9876543210</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="FirstName">
+                        <dsml:value>ABCD</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="UserID">
+                        <dsml:value>PNVUSRNP01234</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="OrganizationID">
+                        <dsml:value>Google</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="StateProvinceRegion">
+                        <dsml:value>State</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="EmailAddress">
+                        <dsml:value>PNVUSRNP01234@anz.com</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="DateofBirth">
+                        <dsml:value>01/01/1900</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="ANZManaged">
+                        <dsml:value>True</dsml:value>
+                    </dsml:attr>
+                    <dsml:attr name="GroupNames">
+                        <dsml:value>DA Registration Officer,DA Transactive Global Officer,DA Help Desk Officer</dsml:value>
+                    </dsml:attr>
+                </data>
+            </addRequest>
+        </provisionUserRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,122 @@
+{
+    "baseCurrency": "AUD",
+    "products": [
+      "p_dompay-au-dc",
+      "p_dompay-au-npp",
+      "p_dompay-au-rtgs",
+      "p_bpay-au",
+      "p_intpay",
+      "p_transfer",
+      "p_rep-account",
+      "p_rep-td",
+      "p_fulfil",
+      "p_service",
+      "p_rep-selfserv",
+      "p_cc-da",
+      "p_dompay-cn",
+      "p_dompay-nz-lv",
+      "p_dompay-nz-scp",
+      "p_da",
+      "p_rep-loan",
+      "p_clearingserv",
+      "p_fxoverlay",
+      "p_contractmgmt",
+      "p_balance",
+      "p_engagement",
+      "p_feecharges",
+      "p_sla",
+      "p_transaction",
+      "p_companalysis",
+      "p_custanalysis",
+      "p_hotspotanalysis",
+      "p_journeyanalysis",
+      "p_spendanalysis",
+      "p_houseanalysis",
+      "p_omnidemoapp",
+      "p_benemgmt"
+    ],
+    "addressLine1": "839 Collins St",
+    "suburbOrCity": "Dockland",
+    "postalCode": "3001",
+    "country": "AU",
+    "customerName": "testCustomer071401",
+    "customerId": "testCustomer071401",
+    "phone": "0401980652",
+    "email": "testCustomer071401@anz.com",
+    "productFamilies": [
+      "pf_cashmgmt",
+      "pf_commcard",
+      "pf_clearing",
+      "pf_loan",
+      "pf_custadmin",
+      "pf_fxoverlay",
+      "pf_fxservices",
+      "pf_datainsights",
+      "pf_omnidemoapp"
+    ],
+    "jurisdictions": [
+      "AU",
+      "CN",
+      "HK",
+      "NZ",
+      "SG"
+    ],
+    "productSettings": [
+      {
+        "settingId": "2FARequired",
+        "settingValue": "yes",
+        "productFamilyId": "pf_cashmgmt"
+      }
+    ],
+    "selectedFeatures": [
+      {
+        "productFamily": "pf_custadmin",
+        "productId": "p_da",
+        "featureIds": [
+          "f_user",
+          "f_role",
+          "f_resource",
+          "f_resourcegroup",
+          "f_authpanel",
+          "f_division",
+          "f_confdatagroup"
+        ]
+      },
+      {
+        "productFamily": "pf_cashmgmt",
+        "productId": "p_service",
+        "featureIds": [
+          "f_accopenPCM",
+          "f_amendbilling",
+          "f_bckdttxn",
+          "f_bpaymgmt",
+          "f_bureaumgmt",
+          "f_chnlaccmgmt",
+          "f_chnlloandeal",
+          "f_chnlmgmt",
+          "f_chnlusrmgmt",
+          "f_chqbookmgmt",
+          "f_closeacc",
+          "f_closechnl",
+          "f_depbookmgmt",
+          "f_directdebitmgmt",
+          "f_duppmt",
+          "f_encodingerr",
+          "f_grpmandatemgmt",
+          "f_lemgmt",
+          "f_lmmgmt",
+          "f_missingdep",
+          "f_ppmgmt",
+          "f_recallpmt",
+          "f_returnfund",
+          "f_signatory",
+          "f_stmtmgmt",
+          "f_stopchq",
+          "f_tracetxn",
+          "f_enquiries"
+        ]
+      }
+    ],
+    "adminModel": "DUAL",
+    "type": "EXTERNAL"
+  }

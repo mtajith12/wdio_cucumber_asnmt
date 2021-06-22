@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./build",
+    "target": "es5",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "experimentalDecorators": true,
+    "paths": {
+      "*": [
+        "./*"
+      ],
+      "src/*": [
+        "./api/*",
+        "./steps/*",
+        "./pages/*",
+        "./utils/*",
+        "./ReportValidation/*"
+      ]
+    },
+    "typeRoots": [
+      "./types"
+    ],
+    "types": [
+      "node",
+      "@wdio/sync",
+      "chai",
+      "@wdio/cucumber-framework",
+      "reflect-metadata"
+    ]
+  },
+  "include": [
+    "./steps/**/*.ts",
+    "./pages/**/*.ts",
+    "./utils/**/*.ts",
+    "./ReportValidation/**/*.ts"
+  ]
+}
